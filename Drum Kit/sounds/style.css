@@ -1,0 +1,30 @@
+.bg{
+  background-color: #DBF7F3;
+}
+.box{
+  height: 120px;
+  width: 120px;
+  border: 1px solid #DBF7F3;
+
+}
+.letters{
+  text-align: center;
+  padding: 45px;
+  font-family: Courier;
+  font-weight: bold;
+}
+.container{
+
+}
+td{
+  border-right: 45px solid #DBF7F3;
+  border-bottom: 80px solid #DBF7F3;
+
+}
+.mycontent{
+  padding: 30px;
+}
+h2{
+  text-align: center;
+  font-family: Courier;
+}

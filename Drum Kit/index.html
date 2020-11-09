@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Musical Keyboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+<img class="img-fluid" src="image/music.png" alt="">
+
+
+<!-- KEYS -->
+    <div data-key="65">
+
+    </div>
+    <div data-key="83">
+
+    </div>
+    <div data-key="68">
+
+    </div>
+    <div data-key="70">
+
+    </div>
+    <div data-key="71">
+
+    </div>
+    <div data-key="72">
+
+    </div>
+    <div data-key="74">
+
+    </div>
+    <div data-key="80">
+
+    </div>
+    <div data-key="67">
+
+    </div>
+    <div data-key="69">
+
+    </div>
+    <div data-key="79">
+
+    </div>
+    <div data-key="81">
+
+    </div>
+    <div data-key="82">
+
+    </div>
+    <div data-key="86">
+
+    </div>
+    <div data-key="88">
+
+    </div>
+    <div data-key="90">
+
+    </div>
+    <div data-key="66">
+
+    </div>
+    <div data-key="78">
+
+    </div>
+    <div data-key="87">
+
+    </div>
+    <div data-key="69">
+
+    </div>
+    <div data-key="75">
+
+    </div>
+    <div data-key="76">
+
+    </div>
+    <div data-key="85">
+
+    </div>
+    <div data-key="73">
+
+    </div>
+    <div data-key="84">
+
+    </div>
+    <div data-key="77">
+
+    </div>
+    <div data-key="89">
+
+    </div>
+
+
+    <!-- AUDIO -->
+
+    <audio data-key="65" src="sounds/sa.wav"></audio>
+    <audio data-key="66" src="sounds/sb.wav"></audio>
+    <audio data-key="67" src="sounds/sc.wav"></audio>
+    <audio data-key="68" src="sounds/sd.wav"></audio>
+    <audio data-key="69" src="sounds/se.wav"></audio>
+    <audio data-key="70" src="sounds/sf.wav"></audio>
+    <audio data-key="71" src="sounds/sg.wav"></audio>
+    <audio data-key="72" src="sounds/sh.wav"></audio>
+    <audio data-key="73" src="sounds/si.wav"></audio>
+    <audio data-key="74" src="sounds/sj.wav"></audio>
+    <audio data-key="75" src="sounds/sk.wav"></audio>
+    <audio data-key="76" src="sounds/sl.wav"></audio>
+    <audio data-key="77" src="sounds/sm.wav"></audio>
+    <audio data-key="78" src="sounds/sn.wav"></audio>
+    <audio data-key="79" src="sounds/so.wav"></audio>
+    <audio data-key="80" src="sounds/sp.wav"></audio>
+    <audio data-key="81" src="sounds/sq.wav"></audio>
+    <audio data-key="82" src="sounds/sr.wav"></audio>
+    <audio data-key="83" src="sounds/ss.wav"></audio>
+    <audio data-key="84" src="sounds/st.wav"></audio>
+    <audio data-key="85" src="sounds/su.wav"></audio>
+    <audio data-key="86" src="sounds/sv.wav"></audio>
+    <audio data-key="87" src="sounds/sw.wav"></audio>
+    <audio data-key="88" src="sounds/sx.wav"></audio>
+    <audio data-key="89" src="sounds/sy.wav"></audio>
+    <audio data-key="90" src="sounds/sz.wav"></audio>
+
+
+<!-- JAVASCRIPT -->
+
+    <script>
+      window.addEventListener('keydown',function(e){
+        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
+        if (!audio) return;
+        audio.currentTime=0;
+        audio.play();
+      });
+    </script>
+  </body>
+</html>
